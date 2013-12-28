@@ -45,8 +45,6 @@ import org.junit.runner.manipulation.Sorter;
 import org.junit.runner.notification.Failure;
 import org.junit.runner.notification.RunNotifier;
 
-import uk.co.benjiweber.junitjs.examples.ExampleTestSuite;
-
 /**
  * @author <a href="mailto:git@benjiweber.co.uk">Benji Weber</a>
  *
@@ -64,7 +62,7 @@ public class JSRunner extends Runner implements Filterable, Sortable  {
 	
 	@Override
 	public Description getDescription() {
-		Description suite = Description.createSuiteDescription(ExampleTestSuite.class);
+		Description suite = Description.createSuiteDescription(cls);
 		for (TestClass testClass : tests) {
 			List<TestCase> tests = testClass.testCases;
 			Description desc = Description.createTestDescription(testClass.name, testClass.name);
