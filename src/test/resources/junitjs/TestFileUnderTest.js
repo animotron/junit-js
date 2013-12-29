@@ -25,7 +25,7 @@
  *
  */
 
-load("src/main/java/uk/co/benjiweber/junitjs/examples/FileUnderTest.js");
+load("src/test/resources/junitjs/FileUnderTest.js");
 
 var stub = newStub();
 underTest.collaborator = stub;

@@ -27,7 +27,7 @@
 
 var assert = Packages.org.junit.Assert;
 var jsAssert = {};
-var TestCase = Packages.uk.co.benjiweber.junitjs.TestCase;
+var TestCase = Packages.junitjs.TestCase;
 
 
 jsAssert.assertIntegerEquals = function(a, b) {

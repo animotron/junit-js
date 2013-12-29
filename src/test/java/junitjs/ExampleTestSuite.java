@@ -21,18 +21,18 @@
  */
 package junitjs;
 
-import org.junit.runner.RunWith;
+import org.junit.Test;
+
 
 /**
  * @author <a href="mailto:git@benjiweber.co.uk">Benji Weber</a>
  *
  */
-@Tests({
-	"ExampleTestOne.js", 
-	"ExampleTestTwo.js",
-	"TestFileUnderTest.js"
-})
-@RunWith(JSRunner.class)
 public class ExampleTestSuite {
+
+    @Test
+    public void test(){
+        System.out.print("test");
+    }
 	
 }

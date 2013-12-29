@@ -97,7 +97,7 @@ public class JSRunner extends Runner implements Filterable, Sortable  {
 		try {
 			ScriptEngine engine = getBestJavaScriptEngine();
 			loadTestUtilities(engine);
-			List<TestClass> testClasses = new ArrayList<TestClass>();
+			List<TestClass> testClasses = new ArrayList<>();
 			for (String name : testNames) {
 				testClasses.add(new TestClass(name, load(engine, name)));
 			}
